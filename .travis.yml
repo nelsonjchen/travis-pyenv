@@ -12,6 +12,9 @@ matrix:
     # Custom options
     - python: pypy
       env: PYENV_VERSION=pypy-5.4.1 PYENV_VERSION_STRING='PyPy 5.4.1' PYENV_ROOT=$HOME/.pyenv-pypy PYENV_RELEASE=v1.0.2 PYTHON_BUILD_CACHE=$HOME/.pyenv-pypy-cache
+    # Custom options
+    - python: '2.7'
+      env: PYENV_VERSION=3.6.0 PYENV_VERSION_STRING='Python 3.6.0' PYTHON_CONFIGURE_OPTS='--enabled-shared'
     # Legacy setup-pypy.sh
     - python: pypy
       env: PYPY_VERSION=5.4.1 SETUP_SCRIPT=setup-pypy.sh

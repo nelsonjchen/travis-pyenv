@@ -41,7 +41,7 @@ PYTHON_BUILD_CACHE_PATH="${PYTHON_BUILD_CACHE_PATH:-$HOME/.pyenv_cache}"
 mkdir -p "$PYTHON_BUILD_CACHE_PATH"
 
 # Install the pyenv
-pyenv install "$PYENV_VERSION"
+pyenv PYTHON_CONFIGURE_OPTS="$PYTHON_CONFIGURE_OPTS" install "$PYENV_VERSION"
 pyenv global "$PYENV_VERSION"
 
 # Make and source a new virtualenv
